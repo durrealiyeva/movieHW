@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-left">
+        <div class="menu-bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar">
+          <div class="navlink active">
+            <i class="fa-solid fa-house"></i>
+            <span class="titleLeft">Home</span>
+          </div>
+          <div id="favBtn" class="navlink">
+            <i class="fa-regular fa-bookmark"></i>
+            <span class="titleLeft">Favorite Videos</span>
+          </div>
+          <div id="likeBtn" class="navlink">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <span class="titleLeft">Like Videos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-right">
+        <header class="page-right-head">
+          <figure class="logo">
+            <img
+              src="https://img.freepik.com/free-psd/editable-movie-style-3d-text-effect_331749-1261.jpg?semt=ais_hybrid"
+              alt="Logo"
+            />
+          </figure>
+          <div class="search">
+            <div>
+              <input id="input" type="text" placeholder="Search" />
+              <span id="searchIcon" class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+            <span class="voice-icon">
+              <i class="fa-solid fa-microphone"></i>
+            </span>
+          </div>
+          <div>
+            <button id="sign" class="btnHead">Sign in</button>
+          </div>
+        <div id="modal" class="modal-hidden">
+            <div class="modal-content">
+                <h3 class="signTitle">Sign in</h3>
+                <input class="signINput" type="text" placeholder="Enter fullname" />
+                <span class="error-message"></span>
+                <input class="signINput" type="email" placeholder="Enter email" />
+                <span class="error-message"></span>
+                <input class="signINput" type="password" placeholder="Enter password" />
+                <span class="error-message"></span>
+                <div>
+                  <button id="cancelBtn" class="signBtn">Cancel</button>
+                  <button id="okBtn" class="signBtn">Ok</button>
+                </div>
+            </div>
+        </div>
+        </header>
+
+        <main id="cards" class="page-right-body">
+          <!-- Card -->
+        </main>
+      </div>
+    </div>
+
+    <div class="favPage">
+      <h1 class="favTitle">My Favorites Movie</h1>
+      <div class="btnBack">
+        <button id="back" class="back">Back to Home</button>
+      </div>
+      <div class="favContent">
+      </div>
+    </div>
+
+    <div class="likePage">
+      <h1 class="favTitle">My Likes Movie</h1>
+      <div class="btnBack">
+        <button id="backLike" class="back">Back to Home</button>
+      </div>
+      <div class="likeContent">
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
