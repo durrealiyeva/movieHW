@@ -25,7 +25,7 @@ const globalData = [];
 async function getMovie() {
   try {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=${key}&s=${searchInput.value}`
+      `https://www.omdbapi.com/?apikey=${key}&s=${searchInput.value}`
     );
     const data = await res.json();
 
