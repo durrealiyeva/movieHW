@@ -51,8 +51,7 @@ async function getMovie() {
           <h4 class="title">${item.Title}</h4>
           <p class="year">Year: ${item.Year}</p>
         </div>
-        <span>
-          <!-- 'data-index' düzgün təyin edildi -->
+        <span class="save">
           <i class="fav fa-solid fa-bookmark" data-index="${index}"></i>
           <i class="like fa-solid fa-heart" data-index="${index}"></i>
         </span>
@@ -67,7 +66,6 @@ async function getMovie() {
 
     fav.forEach((favIcon) => {
       favIcon.style.fontSize = "24px";
-      favIcon.style.marginRight = "14px";
       favIcon.addEventListener("click", (e) => {
         const index = e.target.dataset.index;
         const movie = globalData[index];
@@ -80,7 +78,6 @@ async function getMovie() {
 
     like.forEach((likeIcon) => {
       likeIcon.style.fontSize = "24px";
-      likeIcon.style.marginRight = "14px";
       likeIcon.addEventListener("click", (e) => {
         const index = e.target.dataset.index;
         const movie = globalData[index];
